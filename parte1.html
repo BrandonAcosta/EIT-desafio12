@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parte 1</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/mainstyle.css">
+</head>
+<body>
+    <h1>Parte 1</h1> 
+    <div class="accordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+              Consigna Parte 1
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+            <div class="accordion-body">
+                <ol>
+                    <li>
+                        Antes de iniciar a codificar, elegir una temática para un sitio web (ej: actividades de invierno, spa, muebles, cultura japonesa, juguetes, playas, etc). Crear con JS un elemento span nuevo y agregarle el texto &quot;Temática elegida: &quot; y luego el nombre de la que se haya elegido. Ej: &quot;Temática elegida: autos deportivos&quot;. Agregar el elemento generado como hijo de algún elemento del DOM (h1, body, etc), de tal manera que sea visible por el usuario.
+                    </li>
+                    <li>
+                        Definir una paleta de 4 colores, basada en algún sitio web o manual de marca existente, que sea de la misma temática o rubro definido en el punto anterior. Incorporar un link con la URL del sitio en el cual esté basado la paleta. Utilizar estos colores libremente en este documento, con el fin de estilizarlo. Si se desea, se pueden incorporar otros elementos HTML libremente, modificar los existentes o eliminarlos, como así también utilizar todas las propiedades de CSS que se desee, lo hayamos visto o no en clase, siempre y cuando se cumpla con la consigna.
+                    </li>
+                    <li>
+                        Cargar los colores definidos en el punto anterior como valores de un array.
+                        Generar en la vista un elemento select, con un elemento option para cada uno de los colores existentes en el array. El texto visible por el usuario y el value de cada option pueden o no coincidir.
+                    </li>
+                    <li>
+                        Adicionar un checkbox con el texto &quot;Modo superpuesto&quot;.
+                    </li>
+                    <li>
+                        Crear en la vista 4 círculos concéntricos sin color de fondo, con borde negro.
+                        Programarlos para que al hacer click sobre uno de ellos, cambie su color de fondo por el que esté seleccionado en el momento en el select. Si el modo superpuesto está activado, se deberán pintar también los círculos que se encuentren detrás, en caso contrario, solo cambiará el color del círculo clickeado.
+                    </li>
+                    <li>
+                        Disponer de un botón de reset, para borrar el color de todos los círculos.
+                    </li>
+                    <li>
+                        No utilizar id ni clases para referenciar los botones. Usar constructores de variables de ES6 y arrow functions. Registrar todos los eventos con addEventListener en el document. Realizar el código de tal manera que para agregar más colores solamente sea necesario modificar el array.
+                    </li>
+                    <li>
+                        Al abrirse la página o cambiarse el tamaño de la ventana, si la resolución es menor a 500px, cambiar el color de todos los círculos a gris (pueden ser todos grises o distintos tonos de gris), ignorando cualquier tipo de actividad en los mismos. Es decir que, al ser clickeados, no reaccionarán. Deshabilitar también el select y checkbox existentes. Si se cambia el tamaño de la ventana y llega a los 500px o más, todo volverá a funcionar como antes.
+                    </li>
+                </ol>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div>
+        <select name="colors" id="colors"></select>
+        <label for="colors">Selecciona un color</label>
+
+        <input type="checkbox" id="superpuesto" name="superpuesto">
+        <label for="superpuesto"> modo superpuesto</label>
+    </div>
+    <div class="c4 center">
+        <div class="c3 center">
+            <div class="c2 center">
+                <div class="c1 center">
+
+                </div>
+            </div>
+        </div>
+    </div>
+        <p> La entrega incompleta de este trabajo se debe a un retraso debido a asuntos personales. A la fecha de hoy domingo 7/1 creo que me conviene mas realizar esta entrega de esta forma, y continuar desarrollando los trabajos 13,14 e integrador 1ra parte que retrasarme con estos. Mil disculpas, Brandon Acosta </p>
+    <script src="./js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
